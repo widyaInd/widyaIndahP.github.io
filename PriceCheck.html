@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/price.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/jQuery/order.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/hotel.png" alt="">
+        <nav>
+            <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="PriceCheck.html">Price Check</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form name="form" onchange="hitungtotal()">
+            <table align="center">
+                <br><br><br>
+                <tr>
+                    <td>
+                        <h2 align="center">Input to Check The Price</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Floor
+                    </td>
+                    <td>
+                        <input type="text" size="25" name="noLantai" placeholder="Jumlah...">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Type
+                    </td>
+                    <td>
+                        <select name="tipe">
+                            <option value="">-- Pilih --</option>
+                            <option value="Stantar">Standar</option>
+                            <option value="Superior">Superior</option>
+                            <option value="Deluxe">Deluxe</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Day(s)
+                    </td>
+                    <td>
+                        <input type="text" size="25" name="jhari" placeholder="Jumlah...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Discount
+                    </td>
+                    <td>
+                        <select name="jdiskon">
+                            <option value="">-- Pilih --</option>
+                            <option value="member">Member</option>
+                            <option value="ultah">Birthday Promo</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input style="width: 40%;" type="button" value="Hitung" Onclick="hitungtotal()">
+                        <input style="width: 40%;" type="reset" value="Ulangi">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        Total Price is
+                    </td>
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <input type="text" size="25" name="osub">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Total Discount
+                    </td>
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <input type="text" size="25" name="odiskon">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: red; font-weight: bold;">
+                        Total Payment
+                    </td>
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <input type="text" name="ototal" size="25">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <br> <br>
+    <footer>
+        <b>Copyrigth &copy; WidyaIn</b>
+    </footer>
+</body>
+
+</html>
